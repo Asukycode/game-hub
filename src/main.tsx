@@ -7,7 +7,8 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ChakraProvider theme={theme}>
+    {/* Adding theme below but this requires a config file theme.ts */}
+    <ChakraProvider theme={theme}> 
       <ColorModeScript initialColorMode={theme.config.initialColorMode}/>
       <App />
     </ChakraProvider>
