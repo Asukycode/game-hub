@@ -1,6 +1,7 @@
 import './App.css'
-import { Grid, GridItem, Show, HStack, Image, Text } from '@chakra-ui/react'
-import logo from './assets/logo.webp'
+import Navbar from './components/NavBar'
+import { Grid, GridItem, Show} from '@chakra-ui/react'
+
 function App() {
 
 
@@ -10,10 +11,7 @@ function App() {
       lg: `"nav nav" "main aside"`
     }}>
       <GridItem area='nav' bg='coral'>
-        <HStack>
-          <Image src={logo} boxSize={'60px'}></Image>
-          <Text fontSize='2xl' fontWeight='bold'>Chakra UI</Text>
-        </HStack>
+        <Navbar />
       </GridItem>
 
       <GridItem area='main' bg='lightgreen'>main</GridItem>
